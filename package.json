@@ -11,7 +11,7 @@
     "build": "webpack",
     "test": "jest --runInBand --coverage",
     "test-dev": "jest --runInBand --watch",
-    "start": "webpack --watch --display errors-only",
+    "start": "webpack --watch",
     "lint": "eslint 'src/**' --ext .js",
     "preinstall": "./scripts/create-key.sh",
     "prebuild-dist": "npm run lint && npm run test",
@@ -33,9 +33,9 @@
     "express": "^4.16.3",
     "json-web-key": "^0.3.0",
     "jsonwebtoken": "^8.3.0",
+    "snyk": "^1.518.0",
     "winston": "^3.2.1",
-    "winston-splunk-httplogger": "^2.2.0",
-    "snyk": "^1.518.0"
+    "winston-splunk-httplogger": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
